@@ -2,6 +2,8 @@
 
 This app allows users to search for images and download them using the Unsplash API.
 
+![screenshot of Simple-Search-Image-App](Searcher.jpg)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
