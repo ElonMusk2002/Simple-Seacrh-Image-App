@@ -1,5 +1,8 @@
 const generatorForm = document.getElementById("generatorForm");
+
+
 const textInput = document.getElementById("textInput");
+
 
 const generatedImage = document.getElementById("generatedImage");
 
@@ -8,6 +11,7 @@ const generatedImage = document.getElementById("generatedImage");
     event.preventDefault();
     const text = textInput.value;
     const apiKey = "BTUgTFXkwqoR6gGeTDB3aBCzVFohxrsScT7Jl520U_k";
+
     const apiUrl = `https://api.unsplash.com/photos/random?query=${text}&orientation=squarish&client_id=${apiKey}`;
      fetch(apiUrl)
         .then((response) => response.json())
@@ -20,10 +24,13 @@ const generatedImage = document.getElementById("generatedImage");
 
 // Function to download the image
 
+
 function downloadImage() {
     const imageSrc = generatedImage.querySelector("img").src;
+
     const downloadLink = document.createElement("a");
     downloadLink.href = imageSrc;
+
     downloadLink.download = "generated-image.jpg";
    
  document.body.appendChild(downloadLink);
@@ -33,5 +40,8 @@ function downloadImage() {
 
   // Add click event listener to the download button
 
-  const downloadButton = document.getElementById("downloadButton");
-  downloadButton.addEventListener("click", downloadImage);
+
+  const downloadButton = document.getElementById("downloadButton";
+
+ 
+ downloadButton.addEventListener("click", downloadImage);
