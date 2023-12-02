@@ -1,0 +1,57 @@
+html,body { margin: 0; box-sizing: border-box;padding: 0;font-family: 'Alkatra', cursive;font-size: 16px; line-height: 1.5;overflow-x: hidden;}
+header {
+    background: linear-gradient(45deg,         #566bd4, #4d27d6, #ff14b8, #ba55d3,      #8a2be2, #2000d3);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 20px;}
+h1{
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    margin: 0;}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    } }
+main {margin: 0 auto;padding: 20px; text-align: center;}
+form label {text-align: center;}
+form input {
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc; }
+form button {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;}
+#generatedImage {
+    margin: 20px auto;
+    max-width: 100%;
+    max-height: 100vh;
+    text-align: center;}
+#downloadButton{
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;}
